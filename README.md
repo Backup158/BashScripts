@@ -1,5 +1,5 @@
 # Script Details
-Hello future me (and any weary travelers)! Here's a bunch of amateurly-written scripts. All of the folder locations are hard coded :D
+Hello future me (and any weary travelers)! Here's a bunch of amateurly-written scripts. Used on Linux Mint. All of the folder locations are hard coded :D
 ## Startup
 Executed at startup through crontab. Creates separate audio sinks to split tracks for OBS recording.
 
