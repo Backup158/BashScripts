@@ -1,4 +1,5 @@
 # Script Details
+Hello future me (and any weary travelers)! Here's a bunch of amateurly-written scripts. All of the folder locations are hard coded :D
 ## Startup
 Executed at startup through crontab. Creates separate audio sinks to split tracks for OBS recording.
 
@@ -15,10 +16,10 @@ Downloaded the [7z 64-bit Linux x86-64 precompiled... thing idk](https://www.7-z
 Requires the [Darktide Launcher Skip](https://github.com/ronvoluted/darktide-launcher-skip) to be installed according to the instructions on that repository. 
 
 ## Darktide Clear PowerDI
-The Darktide [Power DI Mod](https://www.nexusmods.com/warhammer40kdarktide/mods/281) stores its settings in the game's AppData folder, and these can get quite bloated. Only this mod (so far) uses the .old and .sav files, so just delete them all. I've cleared out like 3 GB of saved game histories lol.
+The Darktide [Power DI Mod](https://www.nexusmods.com/warhammer40kdarktide/mods/281) stores its settings in the game's AppData folder, and these can get quite bloated over time. Only this mod (so far) uses the .old and .sav files, so just delete them all. I've cleared out like 3 GB of saved game histories lol.
 
 # Resources Referenced
-https://stackoverflow.com/questions/13872048/bash-script-what-does-bin-bash-mean
-https://linuxhandbook.com/bash/
-https://linuxize.com/post/chmod-command-in-linux/
-https://stackoverflow.com/questions/17701989/how-do-i-append-text-to-a-file
+- https://stackoverflow.com/questions/13872048/bash-script-what-does-bin-bash-mean
+- https://linuxhandbook.com/bash/
+- https://linuxize.com/post/chmod-command-in-linux/
+- https://stackoverflow.com/questions/17701989/how-do-i-append-text-to-a-file
