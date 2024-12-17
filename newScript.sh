@@ -8,8 +8,7 @@ if [ $# -ne 1 ]; then
 fi
 
 scriptName=$1
-scriptFile=$scriptName
-scriptFile+=".sh"
+scriptFile="${scriptName}.sh"
 cd ~/Scripts
 touch $scriptFile
 chmod +x $scriptFile
@@ -19,15 +18,11 @@ echo '#!/bin/bash' >> $scriptFile
 echo -n 'Enter the description for this script: '
 read desc
 # Appends description to the script. Without -n because I want the newline.
-commentedDesc="# "
-commentedDesc+=$desc
+commentedDesc="# ${desc}"
 echo $commentedDesc >> $scriptFile
 # Also append to aliases file
-# creating something like: alias scriptName='~/Scripts/scriptName.sh'
 echo $commentedDesc >> ~/.bash_aliases
-newAlias="alias "
-newAlias+=$scriptName
-newAlias+="='~/Scripts/"
-newAlias+=$scriptFile
-newAlias+="'"
-echo $newAlias >> ~/.bash_aliases
+echo "alias ${scriptName}='~/Scripts/${scriptFile}'" >> ~/.bash_aliases
+# Opens the script in Xed text editor
+#   Have already cd'd to ~/Scripts
+xed $scriptFile
