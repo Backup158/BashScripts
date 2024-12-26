@@ -1,0 +1,14 @@
+296	            alsa_output.pci-0000_0b_00.4.analog-stereo
+
+null-sink       536870913
+combined-sink   536870914
+
+pactl load-module module-null-sink sink_name="OBS only"
+pactl load-module module-combine-sink slaves=OBSonly,alsa_output.pci-0000_0b_00.4.analog-stereo sink_name="OBS and Headphones"
+            # pactl load-module module-combine-sink slaves=null-sink,alsa_output.pci-0000_0b_00.4.analog-stereo
+
+
+In pavucontrol, switch to the "Playback" tab. On the right of a sound source, you can select to which output device its sound will go. 
+    standard audio output device if you want to hear the sound, but don't want to stream it. 
+    Null Output if you want to stream it, but don't want to hear it 
+    Simultaneous output (combine output) if you want to hear it AND stream it.
