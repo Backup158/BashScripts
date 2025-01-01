@@ -9,6 +9,9 @@ Creates a .bak of all arguments. Dumps them in current working directory.
 ## New Script
 Initializes a new script in my Scripts folder, makes it executable, and adds an entry to `~/.bash_aliases` for ease of use. Then opens in Xed text editor to quickly edit it. I heard you like scripts, so I made a script to automate your scripts.
 
+## Install Font
+Assumes you have downloaded fonts to the current working directory. Pass the archive names to the script and it will unzip the fonts to the shared user location (creating a folder for each font).
+
 ## 7z
 Downloaded the [7z 64-bit Linux x86-64 precompiled... thing idk](https://www.7-zip.org/download.html) and put it in `/usr/7z/`. Is this bad practice? Idk I should figure that out. I didn't want to have to wait for the p7zip dev to update, so I use this primitive script for my most common use case.
 
