@@ -22,10 +22,10 @@ Calls the autopurge for kernels older than (current - 1). Needs sudo. Really sho
 Converts all webp files to png then deletes them. Does NOT contain checks for if the conversion fails; use with caution!
 
 ## Darktide Launcher
-Requires the [Darktide Launcher Skip](https://github.com/ronvoluted/darktide-launcher-skip) to be installed according to the instructions on that repository. 
+Requires the [Darktide Launcher Skip](https://github.com/ronvoluted/darktide-launcher-skip) to be installed according to the instructions on that repository. Hardcoded folder location.
 
 ## Darktide Clear PowerDI
-The Darktide [Power DI Mod](https://www.nexusmods.com/warhammer40kdarktide/mods/281) stores its settings in the game's AppData folder, and these can get quite bloated over time. Only this mod (so far) uses the .old and .sav files, so just trash them all. I've cleared out like 3 GB of saved game histories lol. Needs sudo.
+The Darktide [Power DI Mod](https://www.nexusmods.com/warhammer40kdarktide/mods/281) stores its settings in the game's AppData folder, and these can get quite bloated over time. Only this mod (so far) uses the .old and .sav files, so just trash them all. I've cleared out like 3 GB of saved game histories lol. Needs sudo. Hardcoded folder location.
 
 # Resources Referenced
 - https://stackoverflow.com/questions/13872048/bash-script-what-does-bin-bash-mean
