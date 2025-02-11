@@ -28,7 +28,9 @@ Requires the [Darktide Launcher Skip](https://github.com/ronvoluted/darktide-lau
 The Darktide [Power DI Mod](https://www.nexusmods.com/warhammer40kdarktide/mods/281) stores its settings in the game's AppData folder, and these can get quite bloated over time. Only this mod (so far) uses the .old and .sav files, so just trash them all. I've cleared out like 3 GB of saved game histories lol. Needs sudo. Hardcoded folder location.
 
 ## Create New Darktide Mod
-Creates a new Darktide mod for each argument, which are separated by spaces. Mod names therefore cannot contain spaces. Initializes mod files with basic data/localization setup and the version logging on game load.
+Creates a new Darktide mod for each argument, which are separated by spaces. Mod names therefore cannot contain spaces. Mods are created in current working directory.
+
+Initializes mod files with basic data/localization setup and the version logging on game load.
 
 # Resources Referenced
 - https://stackoverflow.com/questions/13872048/bash-script-what-does-bin-bash-mean
