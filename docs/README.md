@@ -18,6 +18,8 @@ Downloaded the [7z 64-bit Linux x86-64 precompiled... thing idk](https://www.7-z
 ## Remove Old Linux Kernels
 Calls the autopurge for kernels older than (current - 1). Needs sudo. Really should just be an alias but I like seeing what was installed.
 
+Btw with Linux Mint, you can do this through the Update Manager GUI by going to View --> Linux Kernels
+
 ## Convert and Delete webp files
 Converts all webp files to png then deletes them. Does NOT contain checks for if the conversion fails; use with caution!
 
