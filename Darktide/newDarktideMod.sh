@@ -49,7 +49,7 @@ do
     # Creates mod .lua files
     #   Main
     touch $arg/scripts/mods/$arg/$arg.lua
-    echo "local mod = get_mod(\"${arg})\")" >> $arg/scripts/mods/$arg/$arg.lua
+    echo "local mod = get_mod(\"${arg}\")" >> $arg/scripts/mods/$arg/$arg.lua
     echo "mod.version = \"1.0\"" >> $arg/scripts/mods/$arg/$arg.lua
     echo -e "\n--#################################\n-- Requirements\n--#################################\n\n\n--#################################\n-- Hooks\n--#################################" >> $arg/scripts/mods/$arg/$arg.lua
     echo "mod.on_all_mods_loaded = function()" >> $arg/scripts/mods/$arg/$arg.lua
@@ -57,7 +57,7 @@ do
     echo -e "\n\n\nend" >> $arg/scripts/mods/$arg/$arg.lua
     #   Data
     touch $arg/scripts/mods/$arg/${arg}_data.lua
-    echo "local mod = get_mod(\"${arg})\")" >> $arg/scripts/mods/$arg/${arg}_data.lua
+    echo "local mod = get_mod(\"${arg}\")" >> $arg/scripts/mods/$arg/${arg}_data.lua
     echo -e "return {\n    name = mod:localize(\"mod_name\"),\n    description = mod:localize(\"mod_description\"),\n    is_togglable = true,\n}" >> $arg/scripts/mods/$arg/${arg}_data.lua
     #   Localization
     touch $arg/scripts/mods/$arg/${arg}_localization.lua
