@@ -23,6 +23,8 @@ Btw with Linux Mint, you can do this through the Update Manager GUI by going to 
 ## Convert and Delete webp files
 Converts all webp files to png then deletes them. Does NOT contain checks for if the conversion fails; use with caution!
 
+# Gaming-related Scripts
+
 ## Darktide Launcher
 Requires the [Darktide Launcher Skip](https://github.com/ronvoluted/darktide-launcher-skip) to be installed according to the instructions on that repository. Hardcoded folder location.
 
@@ -33,6 +35,12 @@ The Darktide [Power DI Mod](https://www.nexusmods.com/warhammer40kdarktide/mods/
 Creates a new Darktide mod for each argument, which are separated by spaces. Mod names therefore cannot contain spaces. Mods are created in current working directory.
 
 Initializes mod files with basic data/localization setup and the version logging on game load.
+
+## Darktide Link Repo to Game
+Creates a symlink from the mod development folder to the game folder. Takes the path to the mod folder in the repository. Game folder location is hard coded.
+
+## Darktide Create Mod and Repo
+For each given mod name, create a repository folder in the mod development folder and symlink it to the game. Mod development folder and game folder locations are hard coded. Calls the previous two scripts.
 
 # Resources Referenced
 - https://stackoverflow.com/questions/13872048/bash-script-what-does-bin-bash-mean
