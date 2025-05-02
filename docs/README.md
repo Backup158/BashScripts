@@ -47,6 +47,9 @@ Initializes mod files with basic data/localization setup and the version logging
 ## Darktide Link Repo to Game
 Creates a symlink from a mod development folder to the game folder. Takes the path to the mod folder in the repository. 
 
+## Darktide Find Weapon Customization Plugin Slots
+Finds slots added by plugins for the Weapon Customization mod. Takes the folder names (with the slash `/`), separated by spaces. Dumps results into a text file.
+
 > [!WARNING]
 > Game folder location is hard coded.
 
